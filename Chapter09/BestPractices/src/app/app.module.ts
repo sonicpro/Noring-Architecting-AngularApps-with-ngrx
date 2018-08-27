@@ -13,10 +13,7 @@ import { counterReducer } from "./counter/counter.reducer";
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({
-      jedisKeyModified: jediListReducer, // jedisKeyModified property is added to the global state and has a type of jedyListReducer function.
-      counterKeyModified: counterReducer
-    }),
+    StoreModule.forRoot({}),
     JediModule,
     CounterModule
   ],

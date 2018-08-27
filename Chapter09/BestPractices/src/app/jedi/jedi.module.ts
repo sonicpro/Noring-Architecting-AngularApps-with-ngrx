@@ -11,7 +11,9 @@ import { Jedi } from "./jedi.model";
 import { Action } from "@ngrx/store";
 
 @NgModule({
-  imports: [FormsModule, BrowserModule],
+  imports: [FormsModule, BrowserModule,
+  StoreModule.forFeature("jedisKeyModified", jediListReducer), // Defines the name of the feature state and the reducer function.
+  ],
   exports: [JediListComponent],
   declarations: [JediListComponent],
   providers: []
